@@ -1,0 +1,9 @@
+D:\web\STRAVEL\STRAVEL\bin\STRAVEL.dll.config
+D:\web\STRAVEL\STRAVEL\bin\STRAVEL.dll
+D:\web\STRAVEL\STRAVEL\bin\STRAVEL.pdb
+D:\web\STRAVEL\STRAVEL\obj\Debug\STRAVEL.dll
+D:\web\STRAVEL\STRAVEL\obj\Debug\STRAVEL.pdb
+D:\web\STRAVEL\STRAVEL\bin\FredCK.FCKeditorV2.dll
+D:\web\STRAVEL\STRAVEL\obj\Debug\STRAVEL.csproj.CoreCompileInputs.cache
+D:\web\STRAVEL\STRAVEL\obj\Debug\STRAVEL.csproj.CopyComplete
+D:\web\STRAVEL\STRAVEL\obj\Debug\STRAVEL.csproj.AssemblyReference.cache

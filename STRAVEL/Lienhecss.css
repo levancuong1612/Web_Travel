@@ -1,0 +1,56 @@
+﻿body {
+    margin:0px;
+}
+.body{
+    width:100%;
+    height:880px;
+    
+}
+.lienhe{
+    
+  
+    -moz-box-shadow: 1px 1px #d2cdcd;
+    -webkit-box-shadow: 1px 1px #d2cdcd;
+       box-shadow: 1px 1px 1px 2px #d2cdcd;
+}
+.tieude{
+    margin-top:100px;
+}
+
+.txt_tieude{
+    width:600px;
+    height:30px;
+  
+}
+.noidung{
+
+}
+#FCKNoidung{
+    margin-left:100px;
+}
+.txt_email{
+    width:600px;
+    height:30px;
+}
+.txt_noidung{
+    width:600px;
+    height:100px
+}
+.txt_SDT,.txt_hoten,.txt_ngaygui{
+    width:600px;
+    height:30px;
+}
+.btn_gui{
+    font-size:25px;
+    margin-left:220px;
+    margin-top:30px;
+    background-color:#000000;
+    color:#d2cdcd;
+    font-weight:bold;
+    width:120px;
+    height:40px;
+}
+.text{
+    font-weight:bold;
+    font-size:20px;
+}

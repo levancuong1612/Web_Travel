@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Du Lịch Việt Nam</title>
+    <link rel="stylesheet" type="text/css" href="./giaodiencss.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js">
+        </script>
+        <script type="text/javascript" src="thuchanhjs.js"></script>
+        <script type="text/javascript" src="hieuungjs.js"></script>
+
+</head>
+<body  >
+
+        <div class="giaodien">
+            <img class="slide" src="./img/banner01.jpg" stt="0" />
+            <img class="slide" src="./img/banner07.jpg " style=" display:none" stt="1" />
+            <img class="slide" src="./img/banner03.jpg " style=" display:none " stt=" 2" />
+            <img class="slide" src="./img/banner04.jpg" style="display:none " stt="3" />
+            <img class="slide" src="./img/banner05.jpg" style="display:none " stt="4" />
+            <img class="slide" src="./img/banner06.jpg" style="display:none " stt="5" />
+            <a href="#" id="prev"><img src="./left.png" style="width:60px ; height:60px" /> </a>
+            <a href="#" id="next"><img src="./right.png" style="width:60px ; height:60px" /> </a>
+
+        </div>
+        <div class="banner">
+            <img id="logo" src="./logo01.png" />
+
+            <ul class="menu">
+                <li class="Home"><i class="fa fa-home"></i><a href="http://localhost:62135/HtmlPage1.html">HOME</a></li>
+                <li class="GIOITHIEU"><a href="http://localhost:62135/GioiThieu.html">GIỚI THIỆU</a></li>
+
+                <li class="VUNGMIEN">
+                    <a href="#">VÙNG MIỀN</a>
+                    <ul class="VUNG">
+                        <li class="MIENBAC">
+                            <a href="http://localhost:62135/diadanh.html">MIỀN BẮC</a>
+                            <ul class="TINHMB">
+                                <li><a href="#">LÀO CAI</a></li>
+                                <li><a href="#">YÊN BÁI</a></li>
+                                <li><a href="#">ĐIỆN BIÊN </a></li>
+                                <li><a href="#">HÒA BÌNH</a></li>
+                                <li><a href="#">LAI CHÂU</a></li>
+                                <li><a href="#">SƠN LA</a></li>
+                                <li><a href="#">HÀ GIANG</a></li>
+                                <li><a href="#">CAO BẰNG</a></li>
+                                <li><a href="#">BẮC KẠN</a></li>
+                                <li><a href="#">LẠNG SƠN</a></li>
+                                <li><a href="#">TUYÊN QUANG</a></li>
+                                <li><a href="#">THÁI NGUYÊN</a></li>
+                                <li><a href="#">PHÚ THỌ</a></li>
+                                <li><a href="#">BẮC GIANG</a></li>
+                                <li><a href="#">QUẢNG NINH</a></li>
+                                <li><a href="#">BẮC NINH</a></li>
+                                <li><a href="#">HÀ NAM</a></li>
+                                <li><a href="#">HÀ NỘI</a></li>
+                                <li><a href="#">HẢI DƯƠNG</a></li>
+                                <li><a href="#">HƯNG YÊN</a></li>
+                                <li><a href="#">HẢI PHÒNG</a></li>
+                                <li><a href="#">NAM NỊNH</a></li>
+                                <li><a href="#">NINH BÌNH</a></li>
+                                <li><a href="#">THÁI BÌNH</a></li>
+                                <li><a href="#">VĨNH PHÚC</a></li>
+                            </ul>
+                        </li>
+                        <li class="MIENTRUNG">
+                            <a href="#">MIỀN TRUNG</a>
+                            <ul class="TINHMT">
+                                <li><a href="#">ĐÀ NẴNG</a></li>
+                                <li><a href="#">NGHỆ AN</a></li>
+                                <li><a href="#">HÀ TỈNH</a></li>
+                                <li><a href="#">QUẢNG BÌNH</a></li>
+                                <li><a href="#">QUẢNG TRỊ</a></li>
+                                <li><a href="#">THỪA THIÊN HUẾ</a></li>
+                                <li><a href="#">QUẢNG NAM</a></li>
+                                <li><a href="#">QUẢNG NGÃI</a></li>
+                                <li><a href="#">BÌNH ĐỊNH</a></li>
+                                <li><a href="#">PHÚ YÊN</a></li>
+                                <li><a href="#">KHÁNH HÒA</a></li>
+                                <li><a href="#">NINH THUẬN</a></li>
+                                <li><a href="#">BÌNH THUẬN</a></li>
+                                <li><a href="#">KOM TUM</a></li>
+                                <li><a href="#">GIA LAI</a></li>
+                            </ul>
+                        </li>
+                        <li class="MIENNAM">
+                            <a href="#">MIỀN NAM</a>
+                            <ul class="TINHMN">
+                                <li><a href="#">BÌNH PHƯỚC</a></li>
+                                <li><a href="#">BÌNH DƯƠNG</a></li>
+                                <li><a href="#">ĐỒNG NAY</a></li>
+                                <li><a href="#">TÂY NINH</a></li>
+                                <li><a href="#">VŨNG TÀU</a></li>
+                                <li><a href="#">THÀNH PHỐ HỒ CHÍ MINH</a></li>
+                                <li><a href="#">LONG AN</a></li>
+                                <li><a href="#">ĐỒNG THÁP</a></li>
+                                <li><a href="#">TIỀN GIANG</a></li>
+                                <li><a href="#">AN GIANG</a></li>
+                                <li><a href="#">BẾN TRE</a></li>
+                                <li><a href="#">VĨNH LONG</a></li>
+                                <li><a href="#">TRÀ VINH</a></li>
+                                <li><a href="#">HẬU GIANG</a></li>
+                                <li><a href="#">KIÊN GIANG</a></li>
+                                <li><a href="#">SÓC TRĂNG</a></li>
+                                <li><a href="#">BẠC LIÊU</a></li>
+                                <li><a href="#">CẦN THƠ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li class="DISAN">
+                    <a href="http://localhost:62135/Disanvanhoavatthe.html">DI SẢN VĂN HÓA</a>
+                    
+                </li>
+
+                <li class="LOAIHINH"><a href="http://localhost:62135/amthuc.html">ẨM THỰC</a></li>
+                <li class="BANGTIN"><a href="http://localhost:62135/Bangtin.html">BẢN TIN</a></li>
+                
+            </ul>
+            <input class="input" placeholder="nhập địa điểm cần tìm......."/>
+          <a class="search" href="#"><img  class="icon" src="./icon.png" /></a>  
+
+        </div>
+    <div class="hinhanh">
+        <img class="img" src="./banner2.jpg" style="margin-bottom:20px" />
+    </div>
+       
+        
+        
+    <div class="tieude"> Cùng nhau khám phá</div>
+       
+    <div style="width:100%;height:10%;float:left;text-align:center">
+        <ul class="luachon ">
+            <li class="vivu">
+                <a id="vivu" onclick="myfunction1()">Vi Vu Việt Nam </a>
+            </li>
+            <li>
+                <a id="khampha" onclick="myfunction2()">Khám Phá Ẩm Thực</a>
+
+            </li>
+            <li>
+                <a id="vuichoi" onclick="myfunction3()">Vui Chơi Giải Trí</a>
+
+
+            </li>
+        </ul>
+    </div>
+        
+    
+    <div class="body" style="float:left;width:100%;height:650px" stt="0">
+        <div class="divlon">
+            <div class="div1">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./diadiem/vungtau.jpg" /></div>
+                    <div class="nendiadiem1">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Vũng Tàu</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="div2">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./diadiem/dalat.jpg" /> </div>
+                    <div class="nendiadiem2">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Đà Lạt</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div3">
+                <a href="#">
+                    <div class="hinhat1" style="width:228px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./diadiem/daocatba.jpg" /> </div>
+                    <div class="nendiadiem3">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Đảo Cát Bà</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div4">
+                <a href="#">
+                    <div class="hinhat1" style="width:454px;height:402px;position:absolute;z-index:1">
+                        <img style="width:100%;height:100%" src="./diadiem/ninhbinh.jpg" />
+                    </div>
+                    <div class="nendiadiem4">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Ninh Bình</p>
+                        <div class="chitietdiadiem4">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div5">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./diadiem/halong.jpg" /></div>
+                    <div class="nendiadiem5">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Hạ Long</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="div6">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 228px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./diadiem/mocchau.jpg" /> </div>
+                    <div class="nendiadiem6">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Mộc Châu</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div7">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./diadiem/sapa.jpg" /></div>
+                    <div class="nendiadiem7">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">SaPa</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div8">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 460px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./diadiem/phuquoc.jpg" /></div>
+                    <div class="nendiadiem8">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Phú Quốc</p>
+                        <div class="chitietdiadiem8">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div9">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 230px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./diadiem/angiang.jpg" /></div>
+                    <div class="nendiadiem9">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">An Giang</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div10">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 454px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./diadiem/danang.jpg" /> </div>
+                    <div class="nendiadiem10">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Đà Nẵng</p>
+                        <div class="chitietdiadiem8">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    <div class="body " style="float: left; display: none;float:left;width:100%;height:500px" stt="1">
+        <div class="divlon">
+            <div class="div1">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./amthuc/bunsua.jpg" /> </div>
+                    <div class="nendiadiem1">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Bún Sứa</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div2">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./amthuc/buncha.jpg" /> </div>
+                    <div class="nendiadiem2">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Bún Chả</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div3">
+                <a href="#">
+                    <div class="hinhat1" style="width:228px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./amthuc/caolau.jpg" /> </div>
+                    <div class="nendiadiem3">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Cao Lầu</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div4">
+                <a href="#">
+                    <div class="hinhat1" style="width:454px;height:402px;position:absolute;z-index:1">
+                        <img style="width:100%;height:100%" src="./amthuc/banhdauxanh.jpg" />
+                    </div>
+                    <div class="nendiadiem4">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Bánh Đậu Xanh</p>
+                        <div class="chitietdiadiem4">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div5">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./amthuc/banhcong.jpg" /></div>
+                    <div class="nendiadiem5">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Bánh Cống</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="div6">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 228px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./amthuc/bunbohhue.jpg" /> </div>
+                    <div class="nendiadiem6">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Bún Bò Huế</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div7">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./amthuc/chamuc.jpg" /></div>
+                    <div class="nendiadiem7">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Chả Mực</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div8">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 460px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./amthuc/cuhudua.jpg" /></div>
+                    <div class="nendiadiem8">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Gỏi Củ Hủ Dừa</p>
+                        <div class="chitietdiadiem8">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div9">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 230px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./amthuc/comchaykhoquet.jpg" /></div>
+                    <div class="nendiadiem9">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Cơm Cháy <br /> Kho Quẹt</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div10">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 454px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./amthuc/banhxeo.jpg" /> </div>
+                    <div class="nendiadiem10">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Bánh Xèo</p>
+                        <div class="chitietdiadiem8">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    <div class="body " style="float: left; width: 100%; height: 500px; display: none" stt="2">
+        <div class="divlon">
+            <div class="div1">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./lehoi/lehoi1.jpg" /> </div>
+                    <div class="nendiadiem1">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Đàn Ca <br /> Tài Tử</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div2">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./lehoi/lehoi2.jpg" /> </div>
+                    <div class="nendiadiem2">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Dân Ca <br /> Quan Họ</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div3">
+                <a href="#">
+                    <div class="hinhat1" style="width:228px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./lehoi/lehoi3.jpg" /> </div>
+                    <div class="nendiadiem3">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Đua Voi</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div4">
+                <a href="#">
+                    <div class="hinhat1" style="width:454px;height:402px;position:absolute;z-index:1">
+                        <img style="width:100%;height:100%" src="./lehoi/lehoi4.jpg" />
+                    </div>
+                    <div class="nendiadiem4">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Ký Ức <br /> Hội An Show</p>
+                        <div class="chitietdiadiem4">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div5">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./lehoi/lehoi5.jpg" /></div>
+                    <div class="nendiadiem5">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Cải Lương</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="div6">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 228px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./lehoi/lehoi6.jpg" /> </div>
+                    <div class="nendiadiem6">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Hát Bài Chòi</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div7">
+                <a href="#">
+                    <div class="hinhat1" style="width:230px;height:200px;position:absolute;z-index:1"><img style="width:100%;height:100%" src="./lehoi/lehoi7.jpg" /></div>
+                    <div class="nendiadiem7">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Nhã Nhạc <br /> Cung Đình Huế</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div8">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 460px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./lehoi/lehoi8.jpg" /></div>
+                    <div class="nendiadiem8">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Cồng Chiêng <br /> Tây Nguyên</p>
+                        <div class="chitietdiadiem8">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div9">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 230px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./lehoi/lehoi10.jpg" /></div>
+                    <div class="nendiadiem9">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Đàn Ca <br /> Nam Bộ</p>
+                        <div class="chitietdiadiem">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+            <div class="div10">
+                <a href="#">
+                    <div class="hinhat1" style=" width: 454px; height: 200px; position: absolute; z-index: 1"><img style="width:100%;height:100%" src="./lehoi/lehoi11.jpg" /> </div>
+                    <div class="nendiadiem10">
+                        <p class="name" style="text-align:center;font-size:25px;color:#ffffff;font-weight:bold">Kéo Co</p>
+                        <div class="chitietdiadiem8">Chi Tiết</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    
+
+
+        <div class="noibat">
+            <div class="tinhot" style="font-weight:bold">Bài Viết Mới Nhất</div>
+            <a class="tin" href="#">
+                <div class="tinhot1">
+                    <div class="hand1" style="width:100%;height:100%">
+                        <img src="./img/tinhot1.jpg" style="width:100%;height:100%" />
+                    </div>
+                    <div class="nd1" style="font-size:35px;font-weight:bold;">Ngắm nhìn vẻ đẹp thơ mộng của bãi biển Tiên Sa – Đà Nẵng</div>
+                </div>
+
+            </a>
+
+            <a class="tin" href="#">
+                <div class="tinhot2">
+                    <div class="hand1" style="width:100%;height:100%">
+                        <img src="./img/tinhot2.jpg" style="width:100%;height:100%" />
+                    </div>
+                    <div class="nd1" style="font-size:35px;font-weight:bold;">Bãi biển Cà Ná với khung cảnh thiên nhiên hoang sơ</div>
+                </div>
+
+            </a>
+            <a class="tin" href="#">
+                <div class="tinhot3">
+                    <div class="hand1" style="width:100%;height:100%">
+                        <img src="./img/tinhot3.jpg" style="width:100%;height:100%" />
+                    </div>
+                    <div class="nd1" style="font-size:35px;font-weight:bold;">Những nét độc đáo nhất của bãi biển Tân Thành</div>
+                </div>
+
+            </a>
+            <a class="tin" href="#">
+                <div class="tinhot4">
+                    <div class="hand1" style="width:100%;height:100%">
+                        <img src="./img/tinhot4.jpg" style="width:100%;height:100%" />
+                    </div>
+                    <div class="nd1" style="font-size:35px;font-weight:bold;">Cực Chill Với Bãi Biển Cần Thơ Nhân Tạo Đẹp Như Tranh Vẽ</div>
+                </div>
+
+            </a>
+
+        </div>
+
+        <div class="footer">
+            Thông tin liên hệ.............................
+        </div>
+
+
+
+
+
+</body>
+</html>

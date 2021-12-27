@@ -1,0 +1,865 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E44A1857-B626-42E2-A4E5-81909C777174}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>STRAVEL</RootNamespace>
+    <AssemblyName>STRAVEL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22451, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WebTest\WebTest\bin\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="Admincss.css" />
+    <Content Include="Amthuc.aspx" />
+    <Content Include="amthuc.html" />
+    <Content Include="amthuccss.css" />
+    <Content Include="amthuc\BANHCONG0.jpg" />
+    <Content Include="amthuc\BANHCONG1.jpg" />
+    <Content Include="amthuc\BANHCONG2.jpg" />
+    <Content Include="amthuc\BANHCONG3.jpg" />
+    <Content Include="amthuc\BANHCONG4.jpg" />
+    <Content Include="amthuc\BANHCONG5.jpg" />
+    <Content Include="amthuc\BANHCONG6.jpg" />
+    <Content Include="amthuc\BANHCONG7.jpg" />
+    <Content Include="amthuc\BANHKHOT1.jpg" />
+    <Content Include="amthuc\BANHKHOT2.jpg" />
+    <Content Include="amthuc\BANHKHOT3.jpg" />
+    <Content Include="amthuc\BANHKHOT4.jpg" />
+    <Content Include="amthuc\BANHKHOT5.jpg" />
+    <Content Include="amthuc\BANHKHOT6.jpg" />
+    <Content Include="amthuc\BANHKHOT7.jpg" />
+    <Content Include="amthuc\BANHKHOT8.jpg" />
+    <Content Include="amthuc\BANHKHOT9.jpg" />
+    <Content Include="amthuc\BANHMI1.jpg" />
+    <Content Include="amthuc\BANHMI2.jpg" />
+    <Content Include="amthuc\BANHMI3.jpg" />
+    <Content Include="amthuc\BANHMI4.jpg" />
+    <Content Include="amthuc\BANHMI5.jpg" />
+    <Content Include="amthuc\BANHMI6.jpg" />
+    <Content Include="amthuc\BANHMI7.jpg" />
+    <Content Include="amthuc\BANHMI8.jpg" />
+    <Content Include="amthuc\BANHXEO0.jpg" />
+    <Content Include="amthuc\BANHXEO1.jpg" />
+    <Content Include="amthuc\BANHXEO2.jpg" />
+    <Content Include="amthuc\BANHXEO3.jpg" />
+    <Content Include="amthuc\BANHXEO4.jpg" />
+    <Content Include="amthuc\BANHXEO5.jpg" />
+    <Content Include="amthuc\BUNBO1.jpg" />
+    <Content Include="amthuc\BUNBO2.jpg" />
+    <Content Include="amthuc\BUNBO3.jpg" />
+    <Content Include="amthuc\BUNBO4.jpg" />
+    <Content Include="amthuc\BUNCHA1.jpg" />
+    <Content Include="amthuc\BUNCHA2.jpg" />
+    <Content Include="amthuc\BUNCHA3.jpg" />
+    <Content Include="amthuc\BUNCHA4.jpg" />
+    <Content Include="amthuc\BUNCHA5.jpg" />
+    <Content Include="amthuc\CAOLAU1.jpg" />
+    <Content Include="amthuc\CAOLAU2.jpg" />
+    <Content Include="amthuc\CAOLAU3.jpg" />
+    <Content Include="amthuc\CAOLAU4.jpg" />
+    <Content Include="amthuc\CAOLAU5.jpg" />
+    <Content Include="amthuc\CAOLAU6.jpg" />
+    <Content Include="amthuc\CAOLAU7.jpg" />
+    <Content Include="amthuc\CAOLAU8.jpg" />
+    <Content Include="amthuc\CAOLAU9.jpg" />
+    <Content Include="amthuc\CATRICH1.jpg" />
+    <Content Include="amthuc\CATRICH2.jpg" />
+    <Content Include="amthuc\CATRICH3.jpg" />
+    <Content Include="amthuc\CATRICH4.jpg" />
+    <Content Include="amthuc\CATRICH5.jpg" />
+    <Content Include="amthuc\CATRICH6.jpg" />
+    <Content Include="amthuc\CHACA1.jpg" />
+    <Content Include="amthuc\CHACA2.jpg" />
+    <Content Include="amthuc\CHACA3.jpg" />
+    <Content Include="amthuc\CHACA4.jpg" />
+    <Content Include="amthuc\CHACA5.jpg" />
+    <Content Include="amthuc\CHACA6.jpg" />
+    <Content Include="amthuc\CHACA7.jpg" />
+    <Content Include="amthuc\DUONGDUA1.jpg" />
+    <Content Include="amthuc\DUONGDUA2.jpg" />
+    <Content Include="amthuc\DUONGDUA3.jpg" />
+    <Content Include="amthuc\DUONGDUA4.jpg" />
+    <Content Include="amthuc\MIQUANG1.jpg" />
+    <Content Include="amthuc\MIQUANG2.jpg" />
+    <Content Include="amthuc\MIQUANG3.jpg" />
+    <Content Include="amthuc\MIQUANG4.jpg" />
+    <Content Include="amthuc\MIQUANG5.jpg" />
+    <Content Include="amthuc\MIQUANG6.jpg" />
+    <Content Include="amthuc\MIQUANG7.jpg" />
+    <Content Include="amthuc\MIQUANG8.jpg" />
+    <Content Include="amthuc\PHO0.jpg" />
+    <Content Include="amthuc\PHO1.jpg" />
+    <Content Include="amthuc\PHO2.jpg" />
+    <Content Include="amthuc\PHO3.jpg" />
+    <Content Include="amthuc\PHO4.jpg" />
+    <Content Include="cauhinh\BANHKHOT4.jpg" />
+    <Content Include="cauhinh\banner01.jpg" />
+    <Content Include="cauhinh\banner03.jpg" />
+    <Content Include="cauhinh\banner05.jpg" />
+    <Content Include="cauhinh\banner06.jpg" />
+    <Content Include="cauhinh\bannerweb.jpg" />
+    <Content Include="cauhinh\BINHLIEU1.JPG" />
+    <Content Include="cauhinh\CAMRANH1.jpg" />
+    <Content Include="cauhinh\DALAT10.jpg" />
+    <Content Include="cauhinh\logo01.png" />
+    <Content Include="cauhinh\nen3.jpg" />
+    <Content Include="cauhinh\nen4.jpg" />
+    <Content Include="Chitiettintuc.aspx" />
+    <Content Include="chitiettintuccss.css" />
+    <Content Include="Dangky.aspx" />
+    <Content Include="Dangnhap.aspx" />
+    <Content Include="demo.css" />
+    <Content Include="diadiem\CAMRANH1.jpg" />
+    <Content Include="diadiem\CAMRANH10.jpg" />
+    <Content Include="diadiem\CAMRANH2.jpg" />
+    <Content Include="diadiem\CAMRANH3.jpg" />
+    <Content Include="diadiem\CAMRANH4.jpg" />
+    <Content Include="diadiem\CAMRANH5.jpg" />
+    <Content Include="diadiem\CAMRANH6.jpg" />
+    <Content Include="diadiem\CAMRANH7.jpg" />
+    <Content Include="diadiem\CAMRANH8.jpg" />
+    <Content Include="diadiem\CAMRANH9.jpg" />
+    <Content Include="diadiem\DALAT1.jpg" />
+    <Content Include="diadiem\DALAT10.jpg" />
+    <Content Include="diadiem\DALAT11.jpg" />
+    <Content Include="diadiem\DALAT12.jpg" />
+    <Content Include="diadiem\DALAT2.jpg" />
+    <Content Include="diadiem\DALAT3.jpg" />
+    <Content Include="diadiem\DALAT4.jpg" />
+    <Content Include="diadiem\DALAT5.jpg" />
+    <Content Include="diadiem\DALAT6.jpg" />
+    <Content Include="diadiem\DALAT7.jpg" />
+    <Content Include="diadiem\DALAT8.jpg" />
+    <Content Include="diadiem\DALAT9.jpg" />
+    <Content Include="diadiem\HALONG1.jpg" />
+    <Content Include="diadiem\HALONG10.jpg" />
+    <Content Include="diadiem\HALONG2.jpg" />
+    <Content Include="diadiem\HALONG3.jpg" />
+    <Content Include="diadiem\HALONG4.jpg" />
+    <Content Include="diadiem\HALONG5.jpg" />
+    <Content Include="diadiem\HALONG6.jpg" />
+    <Content Include="diadiem\HALONG7.jpg" />
+    <Content Include="diadiem\HALONG8.jpg" />
+    <Content Include="diadiem\HALONG9.jpg" />
+    <Content Include="diadiem\HANOI1.jpg" />
+    <Content Include="diadiem\HANOI2.jpg" />
+    <Content Include="diadiem\HANOI3.jpg" />
+    <Content Include="diadiem\HANOI4.jpg" />
+    <Content Include="diadiem\HANOI5.jpg" />
+    <Content Include="diadiem\HANOI6.jpg" />
+    <Content Include="diadiem\HANOI7.jpg" />
+    <Content Include="diadiem\HANOI8.jpg" />
+    <Content Include="diadiem\HOIAN1.jpg" />
+    <Content Include="diadiem\HOIAN2.jpg" />
+    <Content Include="diadiem\HOIAN3.jpg" />
+    <Content Include="diadiem\HOIAN4.jpg" />
+    <Content Include="diadiem\HOIAN5.jpg" />
+    <Content Include="diadiem\HOIAN6.jpg" />
+    <Content Include="diadiem\HONSON1.jpg" />
+    <Content Include="diadiem\HONSON2.jpg" />
+    <Content Include="diadiem\HONSON3.jpg" />
+    <Content Include="diadiem\HONSON4.jpg" />
+    <Content Include="diadiem\HONSON5.jpg" />
+    <Content Include="diadiem\HONSON6.jpg" />
+    <Content Include="diadiem\HONSON7.jpg" />
+    <Content Include="diadiem\HONSON8.jpg" />
+    <Content Include="diadiem\HONSON9.jpg" />
+    <Content Include="diadiem\NAMDU.jpg" />
+    <Content Include="diadiem\NAMDU1.jpg" />
+    <Content Include="diadiem\NAMDU2.jpg" />
+    <Content Include="diadiem\NAMDU3.jpg" />
+    <Content Include="diadiem\NAMDU4.jpg" />
+    <Content Include="diadiem\NAMDU5.jpg" />
+    <Content Include="diadiem\NAMDU6.jpg" />
+    <Content Include="diadiem\NAMDU7.jpg" />
+    <Content Include="diadiem\NAMDU8.jpg" />
+    <Content Include="diadiem\NAMDU9.jpg" />
+    <Content Include="diadiem\NHATRANG1.jpg" />
+    <Content Include="diadiem\NHATRANG10.jpg" />
+    <Content Include="diadiem\NHATRANG11.jpg" />
+    <Content Include="diadiem\NHATRANG2.jpg" />
+    <Content Include="diadiem\NHATRANG3.jpg" />
+    <Content Include="diadiem\NHATRANG4.jpg" />
+    <Content Include="diadiem\NHATRANG5.jpg" />
+    <Content Include="diadiem\NHATRANG6.jpg" />
+    <Content Include="diadiem\NHATRANG7.jpg" />
+    <Content Include="diadiem\NHATRANG8.jpg" />
+    <Content Include="diadiem\NHATRANG9.jpg" />
+    <Content Include="diadiem\PHANTHIET1.jpg" />
+    <Content Include="diadiem\PHANTHIET10.jpg" />
+    <Content Include="diadiem\PHANTHIET11.jpg" />
+    <Content Include="diadiem\PHANTHIET2.jpg" />
+    <Content Include="diadiem\PHANTHIET3.jpg" />
+    <Content Include="diadiem\PHANTHIET4.jpg" />
+    <Content Include="diadiem\PHANTHIET5.jpg" />
+    <Content Include="diadiem\PHANTHIET6.jpg" />
+    <Content Include="diadiem\PHANTHIET7.jpg" />
+    <Content Include="diadiem\PHANTHIET8.jpg" />
+    <Content Include="diadiem\PHANTHIET9.jpg" />
+    <Content Include="diadiem\PHUYEN1.jpg" />
+    <Content Include="diadiem\PHUYEN10.jpg" />
+    <Content Include="diadiem\PHUYEN11.jpg" />
+    <Content Include="diadiem\PHUYEN12.jpg" />
+    <Content Include="diadiem\PHUYEN2.jpg" />
+    <Content Include="diadiem\PHUYEN3.jpg" />
+    <Content Include="diadiem\PHUYEN4.jpg" />
+    <Content Include="diadiem\PHUYEN5.jpg" />
+    <Content Include="diadiem\PHUYEN6.jpg" />
+    <Content Include="diadiem\PHUYEN7.jpg" />
+    <Content Include="diadiem\PHUYEN8.jpg" />
+    <Content Include="diadiem\PHUYEN9.jpg" />
+    <Content Include="diadiem\PQ1.jpg" />
+    <Content Include="diadiem\PQ2.jpg" />
+    <Content Include="diadiem\PQ3.jpg" />
+    <Content Include="diadiem\PQ4.jpg" />
+    <Content Include="diadiem\PQ5.jpg" />
+    <Content Include="diadiem\PQ6.jpg" />
+    <Content Include="diadiem\PQ7.jpg" />
+    <Content Include="diadiem\SAPA1.jpg" />
+    <Content Include="diadiem\SAPA10.jpg" />
+    <Content Include="diadiem\SAPA2.jpg" />
+    <Content Include="diadiem\SAPA3.jpg" />
+    <Content Include="diadiem\SAPA4.jpg" />
+    <Content Include="diadiem\SAPA5.jpg" />
+    <Content Include="diadiem\SAPA6.jpg" />
+    <Content Include="diadiem\SAPA7.jpg" />
+    <Content Include="diadiem\SAPA8.jpg" />
+    <Content Include="diadiem\SAPA9.jpg" />
+    <Content Include="diadiem\TAMCOC1.jpg" />
+    <Content Include="diadiem\VUNGTAU1.jpg" />
+    <Content Include="diadiem\VUNGTAU2.jpg" />
+    <Content Include="diadiem\VUNGTAU3.jpg" />
+    <Content Include="diadiem\VUNGTAU4.jpg" />
+    <Content Include="diadiem\VUNGTAU5.jpg" />
+    <Content Include="diadiem\VUNGTAU6.jpg" />
+    <Content Include="diadiem\VUNGTAU7.jpg" />
+    <Content Include="diadiem\VUNGTAU8.jpg" />
+    <Content Include="diadiem\VUNGTAU9.jpg" />
+    <Content Include="Disan.aspx" />
+    <Content Include="disancss.css" />
+    <Content Include="disan\CONGCHIENG01.jpg" />
+    <Content Include="Duyetbai.aspx" />
+    <Content Include="Lienhe.aspx" />
+    <Content Include="Lienhecss.css" />
+    <Content Include="Nguoidung.aspx" />
+    <Content Include="placeholderTypewriter.js" />
+    <Content Include="Thongtinnd.aspx" />
+    <Content Include="UI\AdminCT.ascx" />
+    <Content Include="UI\ChitiettintucCT.ascx" />
+    <Content Include="diadiem\DLHANOI01.jpg" />
+    <Content Include="diadiem\DLHANOI02.jpg" />
+    <Content Include="diadiem\DLHANOI03.jpg" />
+    <Content Include="diadiem\DLHANOI04.jpg" />
+    <Content Include="diadiem\DLHANOI05.jpg" />
+    <Content Include="diadiem\DLHANOI06.jpg" />
+    <Content Include="diadiem\DLHANOI07.jpg" />
+    <Content Include="diadiem\DLHANOI08.jpg" />
+    <Content Include="disan\CDH01.jpg" />
+    <Content Include="disan\CDH02.jpg" />
+    <Content Include="disan\CDH03.jpg" />
+    <Content Include="disan\CDH04.jpg" />
+    <Content Include="disan\CDH05.jpg" />
+    <Content Include="disan\CDH06.jpg" />
+    <Content Include="disan\CONGCHIENG02.jpg" />
+    <Content Include="disan\CONGCHIENG03.jpg" />
+    <Content Include="disan\CONGCHIENG04.jpg" />
+    <Content Include="disan\CONGCHIENG05.jpg" />
+    <Content Include="disan\CONGCHIENG06.jpg" />
+    <Content Include="disan\CONGCHIENG07.jpg" />
+    <Content Include="disan\NHANHAC01.jpg" />
+    <Content Include="disan\NHANHAC02.jpg" />
+    <Content Include="disan\NHANHAC03.jpg" />
+    <Content Include="disan\NHANHAC04.jpg" />
+    <Content Include="disan\NHANHAC05.jpg" />
+    <Content Include="disan\NHANHAC06.jpg" />
+    <Content Include="disan\PNKB01.jpg" />
+    <Content Include="disan\PNKB02.jpg" />
+    <Content Include="disan\PNKB03.jpg" />
+    <Content Include="disan\PNKB04.jpg" />
+    <Content Include="disan\PNKB05.jpg" />
+    <Content Include="disan\PNKB06.jpg" />
+    <Content Include="disan\PNKB07.jpg" />
+    <Content Include="disan\PNKB08.jpg" />
+    <Content Include="disan\QUANHO01.jpg" />
+    <Content Include="disan\QUANHO02.jpg" />
+    <Content Include="disan\QUANHO03.jpg" />
+    <Content Include="disan\QUANHO04.jpg" />
+    <Content Include="disan\QUANHO05.jpg" />
+    <Content Include="disan\TDMS01.jpg" />
+    <Content Include="disan\TDMS02.jpg" />
+    <Content Include="disan\TDMS03.jpg" />
+    <Content Include="disan\TDMS04.jpg" />
+    <Content Include="disan\TDMS05.jpg" />
+    <Content Include="disan\TDMS06.jpg" />
+    <Content Include="disan\TDMS07.jpg" />
+    <Content Include="disan\VHL01.jpg" />
+    <Content Include="disan\VHL02.jpg" />
+    <Content Include="disan\VHL03.jpg" />
+    <Content Include="disan\VHL04.jpg" />
+    <Content Include="disan\VHL05.jpg" />
+    <Content Include="disan\VHL06.jpg" />
+    <Content Include="tintuc\BASA.JPG" />
+    <Content Include="tintuc\BASA1.JPG" />
+    <Content Include="tintuc\BASA2.JPG" />
+    <Content Include="tintuc\BASA3.JPG" />
+    <Content Include="tintuc\BASA4.JPG" />
+    <Content Include="tintuc\BINHLIEU.JPG" />
+    <Content Include="tintuc\BINHLIEU1.JPG" />
+    <Content Include="tintuc\BINHLIEU2.JPG" />
+    <Content Include="tintuc\BINHLIEU3.JPG" />
+    <Content Include="tintuc\BINHLIEU4.JPG" />
+    <Content Include="tintuc\BINHLIEU5.JPG" />
+    <Content Include="tintuc\BINHLIEU6.JPG" />
+    <Content Include="tintuc\BINHLIEU7.JPG" />
+    <Content Include="tintuc\BINHLIEU8.JPG" />
+    <Content Include="tintuc\CACHEM.JPG" />
+    <Content Include="tintuc\CACHEM1.JPG" />
+    <Content Include="tintuc\DACSAN.JPG" />
+    <Content Include="tintuc\DACSAN1.JPG" />
+    <Content Include="tintuc\DACSAN2.JPG" />
+    <Content Include="tintuc\DACSAN3.JPG" />
+    <Content Include="tintuc\DACSAN4.JPG" />
+    <Content Include="tintuc\DACSAN5.JPG" />
+    <Content Include="tintuc\DACSAN6.JPG" />
+    <Content Include="tintuc\DACSAN7.JPG" />
+    <Content Include="tintuc\DACSAN8.JPG" />
+    <Content Include="tintuc\DACSAN9.JPG" />
+    <Content Include="tintuc\HAIPHONG.JPG" />
+    <Content Include="tintuc\HAIPHONG1.JPG" />
+    <Content Include="tintuc\HAIPHONG2.JPG" />
+    <Content Include="tintuc\HAIPHONG3.JPG" />
+    <Content Include="tintuc\HAIPHONG4.JPG" />
+    <Content Include="tintuc\HAIPHONG5.JPG" />
+    <Content Include="tintuc\HAIPHONG6.JPG" />
+    <Content Include="tintuc\PHUYEN.jpg" />
+    <Content Include="tintuc\PHUYEN1.JPG" />
+    <Content Include="tintuc\PHUYEN2.JPG" />
+    <Content Include="tintuc\PHUYEN3.JPG" />
+    <Content Include="tintuc\PHUYEN4.JPG" />
+    <Content Include="tintuc\PHUYEN5.JPG" />
+    <Content Include="tintuc\SADEC.JPG" />
+    <Content Include="tintuc\SADEC1.JPG" />
+    <Content Include="tintuc\SAIGON.JPG" />
+    <Content Include="tintuc\SAIGON1.JPG" />
+    <Content Include="tintuc\SAIGON2.JPG" />
+    <Content Include="tintuc\SAIGON3.JPG" />
+    <Content Include="tintuc\SAIGON4.JPG" />
+    <Content Include="tintuc\SAIGON5.JPG" />
+    <Content Include="tintuc\SONTRA.JPG" />
+    <Content Include="tintuc\SONTRA1.JPG" />
+    <Content Include="tintuc\TOM.JPG" />
+    <Content Include="tintuc\TOM1.JPG" />
+    <Content Include="tintuc\TOM2.JPG" />
+    <Content Include="UI\AmthucCT.ascx" />
+    <Content Include="amthuc\ctbanhxeo1.jpg" />
+    <Content Include="amthuc\tinnoibat1.jpg" />
+    <Content Include="Chitietamthuc.aspx" />
+    <Content Include="Chitietamthuccss.css" />
+    <Content Include="UI\ChitietamthucCT.ascx" />
+    <Content Include="Chitietdiadanh.aspx" />
+    <Content Include="UI\ChitietdiadanhCT.ascx" />
+    <Content Include="diadiem\bando.jpg" />
+    <Content Include="Disanvanhoa.aspx" />
+    <Content Include="UI\DangkyCT.ascx" />
+    <Content Include="UI\DangnhapCT.ascx" />
+    <Content Include="UI\DisanvanhoaCT.ascx" />
+    <Content Include="Gioithieu.aspx" />
+    <Content Include="UI\GioithieuCT.ascx" />
+    <Content Include="img\bando.jpg" />
+    <Content Include="img\MAP.png" />
+    <Content Include="img\nen1.jpg" />
+    <Content Include="img\nen2.jpg" />
+    <Content Include="img\nen3.jpg" />
+    <Content Include="img\nen4.jpg" />
+    <Content Include="MTPCSS.css" />
+    <Content Include="Site1.Master" />
+    <Content Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="amthuc\back.png" />
+    <Content Include="amthuc\banhcong.jpg" />
+    <Content Include="amthuc\banhdauxanh.jpg" />
+    <Content Include="amthuc\banhxeo.jpg" />
+    <Content Include="amthuc\bunbohhue.jpg" />
+    <Content Include="amthuc\buncha.jpg" />
+    <Content Include="amthuc\bunsua.jpg" />
+    <Content Include="amthuc\caolau.jpg" />
+    <Content Include="amthuc\chamuc.jpg" />
+    <Content Include="amthuc\comchaykhoquet.jpg" />
+    <Content Include="amthuc\cuhudua.jpg" />
+    <Content Include="amthuc\left.png" />
+    <Content Include="amthuc\right.png" />
+    <Content Include="bangtincss.css" />
+    <Content Include="Bantin.aspx" />
+    <Content Include="UI\BantinCT.ascx" />
+    <Content Include="chitietcss.css" />
+    <Content Include="Chitietdisan.aspx" />
+    <Content Include="chitietdisan.html" />
+    <Content Include="chitietdisancss.css" />
+    <Content Include="UI\ChitietdisanCT.ascx" />
+    <Content Include="Diadanh.aspx" />
+    <Content Include="diadanh.html" />
+    <Content Include="diadanhcss.css" />
+    <Content Include="UI\DiadanhCT.ascx" />
+    <Content Include="diadiem\angiang.jpg" />
+    <Content Include="diadiem\dalat.jpg" />
+    <Content Include="diadiem\danang.jpg" />
+    <Content Include="diadiem\daocatba.jpg" />
+    <Content Include="diadiem\halong.jpg" />
+    <Content Include="diadiem\mocchau.jpg" />
+    <Content Include="diadiem\ninhbinh.jpg" />
+    <Content Include="diadiem\phuquoc.jpg" />
+    <Content Include="diadiem\sapa.jpg" />
+    <Content Include="diadiem\vungtau.jpg" />
+    <Content Include="disanvanhoacss.css" />
+    <Content Include="Disanvanhoavatthe.html" />
+    <Content Include="giaodiencss.css" />
+    <Content Include="GioiThieu.html" />
+    <Content Include="GioiThieucss.css" />
+    <Content Include="hieuungjs.js" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="img\anh1.jpg" />
+    <Content Include="img\anh2.jpg" />
+    <Content Include="img\anh3.jpg" />
+    <Content Include="img\banahill.jpg" />
+    <Content Include="img\banner01.jpg" />
+    <Content Include="img\banner02.jpg" />
+    <Content Include="img\banner03.jpg" />
+    <Content Include="img\banner04.jpg" />
+    <Content Include="img\banner05.jpg" />
+    <Content Include="img\banner06.jpg" />
+    <Content Include="img\banner07.jpg" />
+    <Content Include="img\banner2.jpg" />
+    <Content Include="img\banneramthuc.jpg" />
+    <Content Include="img\banneramthuc2.jpg" />
+    <Content Include="img\bannerhoian.jpg" />
+    <Content Include="img\bannerhue.jpg" />
+    <Content Include="img\bannervietnam.2jpg.jpg" />
+    <Content Include="img\bannervietnam.jpg" />
+    <Content Include="img\bannervietnam2.jpg" />
+    <Content Include="img\chuacau.jpg" />
+    <Content Include="img\codohue1.jpg" />
+    <Content Include="img\codohue2.jpg" />
+    <Content Include="img\culaocham.jpg" />
+    <Content Include="img\disan1.jpg" />
+    <Content Include="img\disan2.jpg" />
+    <Content Include="img\disan3.jpg" />
+    <Content Include="img\disan4.jpg" />
+    <Content Include="img\disan5.jpg" />
+    <Content Include="img\disan6.jpg" />
+    <Content Include="img\disan7.jpg" />
+    <Content Include="img\ganuongdatset.jpg" />
+    <Content Include="img\hinhanhphu1.jpg" />
+    <Content Include="img\hinhanhphu2.jpg" />
+    <Content Include="img\hinhanhphu3.jpg" />
+    <Content Include="img\hoanhthanh.jpg" />
+    <Content Include="img\hoian.jpg" />
+    <Content Include="img\hoian2.jpg" />
+    <Content Include="img\hot1.jpg" />
+    <Content Include="img\hot2.jpg" />
+    <Content Include="img\hot3.jpg" />
+    <Content Include="img\hue.jpg" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\left.png" />
+    <Content Include="img\logo01.png" />
+    <Content Include="img\noibat1.jpg" />
+    <Content Include="img\noibat2.jpg" />
+    <Content Include="img\noibat3.jpg" />
+    <Content Include="img\noidung1.jpg" />
+    <Content Include="img\noidung2.jpg" />
+    <Content Include="img\noidung3.jpg" />
+    <Content Include="img\noidung4.jpg" />
+    <Content Include="img\noidung5.jpg" />
+    <Content Include="img\noidung6.jpg" />
+    <Content Include="img\noidung7.jpg" />
+    <Content Include="img\noidung8.jpg" />
+    <Content Include="img\phongnha.jpg" />
+    <Content Include="img\quangcao.jpg" />
+    <Content Include="img\quoctugiam.jpg" />
+    <Content Include="img\right.png" />
+    <Content Include="img\sapa.jpg" />
+    <Content Include="img\thanhdiams.jpg" />
+    <Content Include="img\thongtinha.jpg" />
+    <Content Include="img\tin1.jpeg" />
+    <Content Include="img\tin2.jpg" />
+    <Content Include="img\tin3.jpg" />
+    <Content Include="img\tinhot1.jpg" />
+    <Content Include="img\tinhot2.jpg" />
+    <Content Include="img\tinhot3.jpg" />
+    <Content Include="img\tinhot4.jpg" />
+    <Content Include="img\travelvn.png" />
+    <Content Include="img\tucamthanh.jpg" />
+    <Content Include="lehoi\lehoi1.jpg" />
+    <Content Include="lehoi\lehoi10.jpg" />
+    <Content Include="lehoi\lehoi11.jpg" />
+    <Content Include="lehoi\lehoi12.jpg" />
+    <Content Include="lehoi\lehoi2.jpg" />
+    <Content Include="lehoi\lehoi3.jpg" />
+    <Content Include="lehoi\lehoi4.jpg" />
+    <Content Include="lehoi\lehoi5.jpg" />
+    <Content Include="lehoi\lehoi6.jpg" />
+    <Content Include="lehoi\lehoi7.jpg" />
+    <Content Include="lehoi\lehoi8.jpg" />
+    <Content Include="lehoi\lehoi9.jpg" />
+    <Content Include="thongtinchitietdiadanh.html" />
+    <Content Include="thuchanhjs.js" />
+    <Content Include="Trangchu.aspx" />
+    <Content Include="UI\LienheCT.ascx" />
+    <Content Include="UI\NguoidungCT.ascx" />
+    <Content Include="UI\TrangChuCT.ascx" />
+    <Content Include="vungmiencss.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Amthuc.aspx.cs">
+      <DependentUpon>Amthuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Amthuc.aspx.designer.cs">
+      <DependentUpon>Amthuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chitiettintuc.aspx.cs">
+      <DependentUpon>Chitiettintuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitiettintuc.aspx.designer.cs">
+      <DependentUpon>Chitiettintuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dangky.aspx.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dangky.aspx.designer.cs">
+      <DependentUpon>Dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dangnhap.aspx.cs">
+      <DependentUpon>Dangnhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.aspx.designer.cs">
+      <DependentUpon>Dangnhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disan.aspx.cs">
+      <DependentUpon>Disan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disan.aspx.designer.cs">
+      <DependentUpon>Disan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Duyetbai.aspx.cs">
+      <DependentUpon>Duyetbai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Duyetbai.aspx.designer.cs">
+      <DependentUpon>Duyetbai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lienhe.aspx.cs">
+      <DependentUpon>Lienhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lienhe.aspx.designer.cs">
+      <DependentUpon>Lienhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Nguoidung.aspx.cs">
+      <DependentUpon>Nguoidung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nguoidung.aspx.designer.cs">
+      <DependentUpon>Nguoidung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Thongtinnd.aspx.cs">
+      <DependentUpon>Thongtinnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Thongtinnd.aspx.designer.cs">
+      <DependentUpon>Thongtinnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminCT.ascx.cs">
+      <DependentUpon>AdminCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AdminCT.ascx.designer.cs">
+      <DependentUpon>AdminCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChitiettintucCT.ascx.cs">
+      <DependentUpon>ChitiettintucCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ChitiettintucCT.ascx.designer.cs">
+      <DependentUpon>ChitiettintucCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AmthucCT.ascx.cs">
+      <DependentUpon>AmthucCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\AmthucCT.ascx.designer.cs">
+      <DependentUpon>AmthucCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Bantin.aspx.cs">
+      <DependentUpon>Bantin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bantin.aspx.designer.cs">
+      <DependentUpon>Bantin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BantinCT.ascx.cs">
+      <DependentUpon>BantinCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BantinCT.ascx.designer.cs">
+      <DependentUpon>BantinCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Chitietamthuc.aspx.cs">
+      <DependentUpon>Chitietamthuc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitietamthuc.aspx.designer.cs">
+      <DependentUpon>Chitietamthuc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChitietamthucCT.ascx.cs">
+      <DependentUpon>ChitietamthucCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ChitietamthucCT.ascx.designer.cs">
+      <DependentUpon>ChitietamthucCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Chitietdiadanh.aspx.cs">
+      <DependentUpon>Chitietdiadanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitietdiadanh.aspx.designer.cs">
+      <DependentUpon>Chitietdiadanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChitietdiadanhCT.ascx.cs">
+      <DependentUpon>ChitietdiadanhCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ChitietdiadanhCT.ascx.designer.cs">
+      <DependentUpon>ChitietdiadanhCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Chitietdisan.aspx.cs">
+      <DependentUpon>Chitietdisan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitietdisan.aspx.designer.cs">
+      <DependentUpon>Chitietdisan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ChitietdisanCT.ascx.cs">
+      <DependentUpon>ChitietdisanCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\ChitietdisanCT.ascx.designer.cs">
+      <DependentUpon>ChitietdisanCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Diadanh.aspx.cs">
+      <DependentUpon>Diadanh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diadanh.aspx.designer.cs">
+      <DependentUpon>Diadanh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DangkyCT.ascx.cs">
+      <DependentUpon>DangkyCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DangkyCT.ascx.designer.cs">
+      <DependentUpon>DangkyCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DangnhapCT.ascx.cs">
+      <DependentUpon>DangnhapCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DangnhapCT.ascx.designer.cs">
+      <DependentUpon>DangnhapCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DiadanhCT.ascx.cs">
+      <DependentUpon>DiadanhCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DiadanhCT.ascx.designer.cs">
+      <DependentUpon>DiadanhCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Disanvanhoa.aspx.cs">
+      <DependentUpon>Disanvanhoa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disanvanhoa.aspx.designer.cs">
+      <DependentUpon>Disanvanhoa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DisanvanhoaCT.ascx.cs">
+      <DependentUpon>DisanvanhoaCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DisanvanhoaCT.ascx.designer.cs">
+      <DependentUpon>DisanvanhoaCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Gioithieu.aspx.cs">
+      <DependentUpon>Gioithieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gioithieu.aspx.designer.cs">
+      <DependentUpon>Gioithieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GioithieuCT.ascx.cs">
+      <DependentUpon>GioithieuCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\GioithieuCT.ascx.designer.cs">
+      <DependentUpon>GioithieuCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Trangchu.aspx.cs">
+      <DependentUpon>Trangchu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Trangchu.aspx.designer.cs">
+      <DependentUpon>Trangchu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LienheCT.ascx.cs">
+      <DependentUpon>LienheCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\LienheCT.ascx.designer.cs">
+      <DependentUpon>LienheCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NguoidungCT.ascx.cs">
+      <DependentUpon>NguoidungCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\NguoidungCT.ascx.designer.cs">
+      <DependentUpon>NguoidungCT.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TrangChuCT.ascx.cs">
+      <DependentUpon>TrangChuCT.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\TrangChuCT.ascx.designer.cs">
+      <DependentUpon>TrangChuCT.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63277</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63277/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

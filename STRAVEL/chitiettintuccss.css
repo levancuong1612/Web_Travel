@@ -1,0 +1,34 @@
+﻿body {
+    margin:0px;
+    background-color:#ffffff;
+}
+.body{
+    width:100%;
+    height:auto;
+    background-color:#ffffff;
+    display: flex;
+justify-content: space-between;
+}
+.noidung1{
+    width:50%;margin-left:10%;
+    display: flex;
+flex-direction: column;
+}
+.noidung2{
+    width:30%;margin-right:5%;
+    display: flex;
+flex-direction: column;
+}
+.noidungtintuc{
+   text-align:justify;
+    margin-top:30px;
+    margin-bottom:10px;
+    width:100%;height:auto;font-size:23px;font-family:'Times New Roman';
+}
+.tinmoi1{
+    display: flex;
+justify-content: space-between;
+}
+div.tinmoi1:hover > div.tieudetinmoi{
+    color:#ff6a00;
+}

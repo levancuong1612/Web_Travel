@@ -1,0 +1,24 @@
+﻿body {
+    margin:0px;
+
+}
+.noidungleft{
+    float:left;
+    width:60%;
+    height:1000px;
+    margin-left:7%;
+  
+}
+.noidungright{
+    float:left;
+    width:25%;
+    margin-top:5%;
+    height:1000px;
+    margin-left:2%;
+    background-color:#ff0000;
+}
+.GIOITHIEU_noidung{
+    width:100%;
+    height:auto;
+    
+}

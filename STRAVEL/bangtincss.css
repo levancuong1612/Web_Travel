@@ -1,0 +1,71 @@
+﻿.body{
+   display: flex;
+justify-content: space-between;
+width:100%;background-color:#ffffff;height:auto;
+margin-bottom:10%;
+}
+body{
+    background-color:#ffffff;
+}
+.noidung1{
+    display: flex;
+flex-direction: column;
+    width:64%;
+    height:auto;
+    background-color:#ffffff;
+}
+.noidung2{
+       display: flex;
+flex-direction: column;
+    margin-left:3%;
+    width:33%;
+    height:auto;
+    background-color:#ffffff;
+}
+.tintucvietnam{
+    display: flex;
+justify-content: space-between;
+    width:100%;
+    height:350px;
+    color:black;
+    background-color:#e1dfdf;
+}
+div.tintucvietnam:hover>div.noidung >h3.tieude{
+    color:#ff6a00;
+}
+div.tin1:hover>div.noidung>h3.tieudetin1{
+    color:#ff6a00;
+}
+.tin1{
+        display: flex;
+justify-content: space-between;
+    width:100%;
+    height:150px;
+    background-color:#e1dfdf;
+    margin-top:2%;
+    color:black;
+}
+.tinmoi1{
+
+            display: flex;
+justify-content: space-between;
+  margin-top:0.5%;
+    width:100%;
+    height:100px;
+    background-color:#ffffff;
+    color:black;
+    border-bottom:1px dotted;
+    margin-bottom:10px;
+}
+div.tinmoi1:hover > div.tieudetinmoi{
+    color:#ff6a00;
+}
+
+#Button2{
+    background-color:#ff6a00;
+    border:1px solid #ffffff;
+    color:black;
+    width:100%;
+    height:100%;
+
+}

@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Di Sản Văn Hóa</title>
+    <link rel="stylesheet" type="text/css" href="./diadanhcss.css" />
+    <link rel="stylesheet" type="text/css" href="./disanvanhoacss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js">
+    </script>
+    <script type="text/javascript" src="thuchanhjs.js"></script>
+
+    <script type="text/javascript" src="hieuungjs.js"></script>
+
+</head>
+<body>
+
+    <div class="giaodien">
+        <img class="slide" src="./19.jpg" stt="0" />
+        <img class="slide" src="./20.jpg" style="display:none" stt="1" />
+        <img class="slide" src="./18.jpg" style="display:none " stt="2" />
+        <img class="slide" src="./21.jpg" style="display:none " stt="3" />
+        <img class="slide" src="./22.jpg" style="display:none " stt="4" />
+        <img class="slide" src="./23.jpg" style="display:none " stt="5" />
+        <a href="#" id="prev"><img src="./left.png" style="width:60px ; height:60px" /> </a>
+        <a href="#" id="next"><img src="./right.png" style="width:60px ; height:60px" /> </a>
+
+    </div>
+    <div class="banner">
+        <img id="logo" src="./logo01.png" />
+
+        <ul class="menu">
+            <li class="Home"><i class="fa fa-home"></i><a href="http://localhost:62135/HtmlPage1.html">HOME</a></li>
+            <li class="GIOITHIEU"><a href="http://localhost:62135/GioiThieu.html">GIỚI THIỆU</a></li>
+
+            <li class="VUNGMIEN">
+                <a href="#">VÙNG MIỀN</a>
+                <ul class="VUNG">
+                    <li><a href="http://localhost:62135/diadanh.html">MIỀN BẮC</a></li>
+                    <li class="MIENTRUNG">
+                        <a href="#">MIỀN TRUNG</a>
+                        <ul class="TINHMT">
+                            <li><a href="#">ĐÀ NẴNG</a></li>
+                            <li><a href="#">NGHỆ AN</a></li>
+                            <li><a href="#">HÀ TỈNH</a></li>
+                            <li><a href="#">QUẢNG BÌNH</a></li>
+                            <li><a href="#">QUẢNG TRỊ</a></li>
+                            <li><a href="#">THỪA THIÊN HUẾ</a></li>
+                            <li><a href="#">QUẢNG NAM</a></li>
+                            <li><a href="#">QUẢNG NGÃI</a></li>
+                            <li><a href="#">BÌNH ĐỊNH</a></li>
+                            <li><a href="#">PHÚ YÊN</a></li>
+                            <li><a href="#">KHÁNH HÒA</a></li>
+                            <li><a href="#">NINH THUẬN</a></li>
+                            <li><a href="#">BÌNH THUẬN</a></li>
+                            <li><a href="#">KOM TUM</a></li>
+                            <li><a href="#">GIA LAI</a></li>
+                        </ul>
+                    </li>
+                    <li class="MIENNAM">
+                        <a href="#">MIỀN NAM</a>
+                        <ul class="TINHMN">
+                            <li><a href="#">BÌNH PHƯỚC</a></li>
+                            <li><a href="#">BÌNH DƯƠNG</a></li>
+                            <li><a href="#">ĐỒNG NAY</a></li>
+                            <li><a href="#">TÂY NINH</a></li>
+                            <li><a href="#">VŨNG TÀU</a></li>
+                            <li><a href="#">THÀNH PHỐ HỒ CHÍ MINH</a></li>
+                            <li><a href="#">LONG AN</a></li>
+                            <li><a href="#">ĐỒNG THÁP</a></li>
+                            <li><a href="#">TIỀN GIANG</a></li>
+                            <li><a href="#">AN GIANG</a></li>
+                            <li><a href="#">BẾN TRE</a></li>
+                            <li><a href="#">VĨNH LONG</a></li>
+                            <li><a href="#">TRÀ VINH</a></li>
+                            <li><a href="#">HẬU GIANG</a></li>
+                            <li><a href="#">KIÊN GIANG</a></li>
+                            <li><a href="#">SÓC TRĂNG</a></li>
+                            <li><a href="#">BẠC LIÊU</a></li>
+                            <li><a href="#">CẦN THƠ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="DISAN">
+                <a href="http://localhost:62135/Disanvanhoavatthe.html">DI SẢN VĂN HÓA</a>
+                <ul class="LOAI">
+                    <li><a href="#">VĂN HÓA PHI VẬT THỂ</a></li>
+                    <li><a href="#">VĂN HÓA VẬT THỂ</a></li>
+                </ul>
+            </li>
+
+            <li class="LOAIHINH"><a href="http://localhost:62135/amthuc.html">ẨM THỰC</a></li>
+            <li class="BANGTIN"><a href="http://localhost:62135/Bangtin.html">BẢN TIN</a></li>
+
+        </ul>
+        <input class="input" placeholder="nhập địa điểm cần tìm......." />
+        <a class="search" href="#"><img class="icon" src="./icon.png" /></a>
+
+    </div>
+    <div class="body" style="width:100%;height:100% ;float:left">
+        <div class="danhmuc">
+            <h3 style="width:100%;height:auto;text-align:center;font-size:30px;border-bottom:1px solid black">Các địa điểm nổi bật</h3>
+            <ul class="danhmuc1" style="color:black">
+                <li><a href="#">QUẦN THỂ DI TÍCH CỐ ĐÔ HUẾ</a></li>
+                <li><a href="#">PHỐ CỔ HỘI AN</a></li>
+                <li><a href="#">THÁNH ĐỊA MỸ SƠN</a></li>
+                <li><a href="#">HOÀNG THÀNH THĂNG LONG</a></li>
+                <li><a href="#">THÀNH NHÀ HỒ</a></li>
+                <li><a href="#">NHÃ NHẠC CUNG ĐÌNH HUẾ</a></li>
+                <li><a href="#">KHÔNG GIAN VĂN HÓA CỒNG CHIÊNG TÂY NGUYÊN</a></li>
+                <li><a href="#">DÂN CA QUAN HỌ</a></li>
+                <li><a href="#">CA TRÙ</a></li>
+                <li><a href="#">HỘI GIÓNG</a></li>
+                <li><a href="#">HÁT XOAN PHÚ THỌ</a></li>
+                <li><a href="#">ĐỜN CA TÀI TỬ</a></li>
+                <li><a href="#">VÍ GIẶM NGHỆ TĨNH</a></li>
+                <li><a href="#">TÍN NGƯỠNG THỜ CÚNG HÙNG VƯƠNG</a></li>
+                <li><a href="#">QUẦN THỂ DANH THẮNG TRÀNG AN, NINH BÌNH</a></li>
+                <li><a href="#">VĂN MIẾU QUỐC TỬ GIÁM</a></li>
+
+
+            </ul>
+        </div>
+        <div class="body_disan" style="width:80%;float:left">
+
+
+
+
+            <div class="disan1">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan1.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Quẩn Thể Di Tích Cố Đô Huế</h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Quần thể di tích Cố đô Huế hay Quần thể di tích Huế là những di tích lịch sử - văn hóa do triều Nguyễn chủ trương xây dựng trong khoảng thời gian từ đầu thế kỷ 19 đến nửa đầu thế kỷ 20 trên địa bàn kinh đô Huế xưa, nay thuộc phạm vi thành phố Huế và một vài vùng phụ cận thuộc tỉnh Thừa Thiên-Huế, Việt Nam. Phần lớn các di tích này nay thuộc sự quản lý của Trung tâm Bảo tồn Di tích Cố đô Huế và được UNESCO công nhận là Di sản Văn hóa Thế giới vào ngày 11/12/1993.. </p>
+                        <p style="float:left;margin-left:5%;margin-top:-1.5%">-Vị Trí : Tỉnh Thừa Thiên Huế</p>
+                        <a href="http://localhost:62135/chitietdisan.html">
+                            <div class="chitiet" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="disan2">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan2.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Phố Cổ Hội An</h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Đô thị cổ Hội An ngày nay là một điển hình đặc biệt về cảng thị truyền thống ở Đông Nam Á được bảo tồn nguyên vẹn và chu đáo.</p>
+                        <p style="float:left;margin-left:5%;margin-top:-1.5%">-Vị Trí :Hội An, Quảng Nam, Việt Nam</p>
+                        <a href="#">
+                            <div class="chitiet2" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="disan3">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan3.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Thánh Địa Mỹ Sơn</h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Đây từng là nơi tổ chức cúng tế của vương triều Chăm Pa cũng như là lăng mộ của các vị vua Chăm Pa hay hoàng thân, quốc thích. Thánh địa Mỹ Sơn được coi là một trong những trung tâm đền đài chính của Ấn Độ giáo ở khu vực Đông Nam Á và là di sản duy nhất của thể loại này tại Việt Nam. </p>
+                        <p style="float:left;margin-left:5%;margin-top:-1.5%">-Vị Trí :xã Duy Phú, huyện Duy Xuyên, tỉnh Quảng Nam.</p>
+                        <a href="#">
+                            <div class="chitiet3" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="disan4">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan4.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Hoàn Thành Thăng Long</h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Hoàng thành Thăng Long là quần thể di tích gắn với lịch sử kinh thành Thăng Long - Đông Kinh và tỉnh thành Hà Nội bắt đầu từ thời kì tiền Thăng Long (An Nam đô hộ phủ thế kỷ VII) qua thời Đinh - Tiền Lê, phát triển mạnh dưới thời Lý, Trần, Lê và thành Hà Nội dưới triều Nguyễn. Đây là công trình kiến trúc đồ sộ, được các triều vua xây dựng trong nhiều giai đoạn lịch sử và trở thành di tích quan trọng bậc nhất trong hệ thống các di tích Việt Nam. </p>
+                        <p style="float:left;margin-left:5%;margin-top:-1.5%">-Vị Trí :Hà Nội,Việt Nam.</p>
+                        <a href="#">
+                            <div class="chitiet4" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="disan5">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan5.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Nhã nhạc cung đình Huế </h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Nhã nhạc cung đình Huế là thể loại nhạc của cung đình thời phong kiến, được biểu diễn vào các dịp lễ hội (vua đăng quang, băng hà, các lễ hội tôn nghiêm khác) trong năm của các triều đại nhà Nguyễn của Việt Nam.Nhã nhạc cung đình Huế đã được UNESCO công nhận là Kiệt tác truyền khẩu và phi vật thể nhân loại vào năm 2003. </p>
+
+                        <a href="#">
+                            <div class="chitiet5" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="disan6">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan6.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Đờn ca tài tử Nam bộ </h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Đờn ca tài tử Nam bộ là một dòng nhạc dân tộc của Việt Nam đã được UNESCO công nhận là di sản văn hóa phi vật thể vào năm 2013. Đờn ca tài tử hình thành và phát triển từ cuối thế kỉ 19, bắt nguồn từ nhạc lễ, Nhã nhạc cung đình Huế và văn học dân gian </p>
+
+                        <a href="#">
+                            <div class="chitiet5" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="disan6">
+                <div class="hinhanhdiadiem" style="float:left;width:30%;height:100%"> <img style="width:100%;height:100%;float:left" src="./img/disan7.jpg" /> </div>
+                <div class="thongtin" style="float:left;width:70%;height:100%;text-align:center;color:black">
+                    <div class="ten_thongtin" style="float:left;width:100%;height:50%">
+                        <h2>Dân ca quan họ ở Bắc Giang và Bắc Ninh</h2>
+                        <p style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left:5%">-Dân ca quan họ ở Bắc Giang và Bắc Ninh là một trong những làn điệu dân ca tiêu biểu của vùng châu thổ sông Hồng ở miền Bắc Việt Nam. Nó còn được gọi là dân ca quan họ Kinh Bắc do được hình thành và phát triển ở vùng văn hóa Kinh Bắc xưa, đặc biệt là khu vực ranh giới hai tỉnh Bắc Giang và Bắc Ninh ngày nay. Ngày 30/9/2009, UNESCO đã chính thức công nhận Quan họ là di sản văn hóa phi vật thể của thể giới.</p>
+
+                        <a href="#">
+                            <div class="chitiet5" style="color:black;font-weight:bold"><p>Xem Chi Tiết</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

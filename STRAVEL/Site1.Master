@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="STRAVEL.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Vi Vu Việt Nam</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" type="text/css" href="MTPCSS.css" />  
+       
+
+ 
+    
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js">
+        </script>
+        <script type="text/javascript" src="thuchanhjs.js"></script>
+        <script type="text/javascript" src="hieuungjs.js"></script>
+       
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <div class="banner">
+            <img id="logo" src='<%="./cauhinh/"+cauhinh.GiaTri %>'/>
+
+            <ul class="menu">
+                 <li class="Home"><i class="fa fa-home"></i><a href="http://localhost:63277/Trangchu.aspx">HOME</a></li>
+                 <li class="GIOITHIEU"><a href="http://localhost:63277/Gioithieu.aspx">GIỚI THIỆU</a></li>
+            
+                <li class="VUNGMIEN">
+                    <a href="#">VÙNG MIỀN</a>
+                    <ul class="VUNG">
+                        <li class="MIENBAC">
+                            <a href="#">MIỀN BẮC</a>
+                            <ul class="TINHMB">
+                                <%foreach (var item in listtinhmb)
+                                        {%>
+                                <li><a href='<%= "Diadanh.aspx?MaTinh="+item.MaTinh%>'><%=item.TenTinh %></a></li>
+                               <%} %>
+                            </ul>
+                        </li>
+                        <li class="MIENTRUNG">
+                            <a href="#">MIỀN TRUNG</a>
+                            <ul class="TINHMT">
+                                <%foreach (var item in listtinhmt)
+                                        {%>
+                                <li><a href='<%= "Diadanh.aspx?MaTinh="+item.MaTinh%>'><%=item.TenTinh %></a></li>
+                               <%} %>
+                               
+                            </ul>
+                        </li>
+                        <li class="MIENNAM">
+                            <a href="#">MIỀN NAM</a>
+                            <ul class="TINHMN">
+                               <%foreach (var item in listtinhmn)
+                                        {%>
+                                <li><a href='<%= "Diadanh.aspx?MaTinh="+item.MaTinh%>'><%=item.TenTinh %></a></li>
+                               <%} %>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+               <li class="DISAN">
+                    <a href="http://localhost:63277/Disanvanhoa.aspx">DI SẢN VĂN HÓA</a>
+                    
+                </li>
+                 <li class="LOAIHINH"><a href="http://localhost:63277/Amthuc.aspx">ẨM THỰC</a></li>
+                <li class="BANGTIN"><a href="http://localhost:63277/Bantin.aspx">BẢN TIN</a></li>
+                      <li class="LIENHE"><a href="http://localhost:63277/Lienhe.aspx">LIÊN HỆ</a></li>
+                
+                   <li class="LIENHE" style="margin-left:-15px">
+                      
+                       
+                       <div style="width:25px;height:25px;-moz-border-radius: 50px;-webkit-border-radius: 50px;border-radius: 50px; background-color:rgb(0, 0, 0)">
+                         <%if(ad.MaAD==0 && nd.MaAD==0){ %>
+                       <a href="Dangnhap.aspx">
+                       <img style="width:25px;height:25px;-moz-border-radius: 50px;-webkit-border-radius: 50px;border-radius: 50px" src="./admin/user.png" />
+                        </a>
+                           <%} %>
+                           <%if(ad.MaAD!=0 && nd.MaAD==0){ %>
+                           <a href='<%="Admin.aspx?MaAD="+ad.MaAD %>'>
+                       <img style="width:25px;height:25px;-moz-border-radius: 50px;-webkit-border-radius: 50px;border-radius: 50px" src='<%="./admin/"+ad.HinhAnh %>' />
+                        </a>
+                           <%} %>
+
+                           <%if(nd.MaAD!=0 && ad.MaAD==0){ %>
+                           <a href='<%="Nguoidung.aspx?MaAD="+nd.MaAD %>'>
+                       <img style="width:25px;height:25px;-moz-border-radius: 50px;-webkit-border-radius: 50px;border-radius: 50px" src='<%="./admin/"+nd.HinhAnh %>' />
+                             </a>
+                           
+                           <%} %>
+                           
+                        </div>
+                    
+
+                   </li>
+                 
+
+                
+
+               
+
+               
+               
+              
+
+            </ul>
+            <!--
+            <input class="input" placeholder="nhập địa điểm cần tìm......."/>
+          <a class="search" href="#"><img  class="icon" src="./img/icon.png" /></a>  
+            -->
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+           <div class="footer" >
+            <div style="width:100%;height:100%;background-color:rgba(29, 106, 148, 0.8);display:flex; flex-direction:column">
+                <h1 style="width:100%;height:30px;float:left"><%=tenweb.GiaTri %></h1>
+                <div style="display: flex;justify-content: space-between;">
+                    <div style="width:50%;height:100%;display: flex;justify-content: space-between;">
+                        <div style="display: flex;flex-direction: column;width:10%;margin-left:20%">
+                            <img style="width:50px;height:50px" src="diadiem/iconmap.png" />
+                            <img style="width:50px;height:50px" src="diadiem/phone.png" />
+                            <img style="width:50px;height:50px" src="diadiem/mail.png" />
+                            <img style="width:50px;height:50px" src="diadiem/fb.png" />
+                        </div>
+                        <div style="display: flex;flex-direction: column;width:70%;text-align:left;font-weight:bold" >
+                            <p style=""><%=diachi.GiaTri %></p>
+                            <p ><%=sdt.GiaTri %></p>
+                            <p ><%=email.GiaTri %></p>
+                            <p >Stravel</p>
+                        </div>
+                    </div>
+                    <div style="width:30%;height:100%;display: flex;justify-content: space-between;">
+                         <div style="display: flex;flex-direction: column;width:10%;margin-left:10%">
+                       
+                            <img style="width:50px;height:50px" src="diadiem/ing.png" />
+                            <img style="width:50px;height:50px" src="diadiem/zalo.png" />
+                                  
+                        </div>
+                        <div style="display: flex;flex-direction: column;width:70%;text-align:left;font-weight:bold" >
+                            <p style="">le.van.cuong.1612</p>
+                            <p ><%=zalo.GiaTri %></p>
+                            
+                        </div>
+                    </div>
+                    <div style="width:20%">
+                        <img style="width:150px;height:150px" src="./img/logo01.png" />
+                        <p style="width:100%;text-align:center;font-weight:bold;font-size:30px">STravel</p>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>
